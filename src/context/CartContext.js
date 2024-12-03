@@ -27,7 +27,7 @@ export const CartProvider = ({ children }) => {
     dispatch({ type: "REMOVE_PRODUCT", payload: id });
   }
   useEffect(() => {
-    console.log("summary");
+    // console.log("summary");
     dispatch({ type: "CAL_TOTAL" });
   }, [state.products]);
   return (
